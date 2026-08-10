@@ -62,7 +62,7 @@ a { color: inherit; }
   color: var(--accent-2);
   font-weight: 600;
   margin-bottom: 0.9rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 }
@@ -211,6 +211,8 @@ main { padding-top: 72px; }
   letter-spacing: -0.01em;
   margin-bottom: 2.5rem;
 }
+
+.contact h2 { text-align: center; }
 
 .services-grid {
   display: grid;
@@ -370,7 +372,7 @@ main { padding-top: 72px; }
 /* ---- Contact Section ---- */
 .contact { padding: 6rem 0; background: var(--surface); border-top: 1px solid var(--border); }
 
-.contact-content { display: flex; justify-content: flex-start; }
+.contact-content { display: flex; justify-content: center; }
 
 .contact-info {
   display: flex;
