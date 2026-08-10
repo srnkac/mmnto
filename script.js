@@ -67,11 +67,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Add scroll effect to header
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
-  if (window.scrollY > 100) {
-    header.style.background = 'rgba(26, 26, 26, 0.98)';
-  } else {
-    header.style.background = 'rgba(26, 26, 26, 0.95)';
-  }
+  header.classList.toggle('scrolled', window.scrollY > 100);
 });
 
 // Add animation on scroll for service cards
