@@ -45,6 +45,95 @@
 
   <main>
     <section id="home" class="hero">
+      <svg class="hero-network" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="packet-glow" x="-200%" y="-200%" width="500%" height="500%">
+            <feGaussianBlur stdDeviation="2.4" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g transform="translate(0,-50)">
+        <path id="e1" class="net-edge" d="M80,120 L220,340" />
+        <path id="e2" class="net-edge" d="M220,340 L380,420" />
+        <path id="e3" class="net-edge" d="M80,120 L400,80" />
+        <path id="e4" class="net-edge" d="M400,80 L600,200" />
+        <path id="e5" class="net-edge" d="M380,420 L600,200" />
+        <path id="e6" class="net-edge" d="M600,200 L780,60" />
+        <path id="e7" class="net-edge" d="M600,200 L850,380" />
+        <path id="e8" class="net-edge" d="M780,60 L1020,150" />
+        <path id="e9" class="net-edge" d="M850,380 L1020,150" />
+        <path id="e10" class="net-edge" d="M1020,150 L1140,320" />
+        <path id="e11" class="net-edge" d="M400,80 L780,60" />
+        <path id="e12" class="net-edge" d="M220,340 L850,380" />
+
+        <path class="net-edge" d="M80,120 L-40,95" />
+        <path class="net-edge" d="M220,340 L190,580" />
+        <path class="net-edge" d="M400,80 L430,-40" />
+        <path class="net-edge" d="M380,420 L340,580" />
+        <path class="net-edge" d="M780,60 L760,-40" />
+        <path class="net-edge" d="M850,380 L880,580" />
+        <path class="net-edge" d="M1020,150 L1230,120" />
+        <path class="net-edge" d="M1140,320 L1230,350" />
+
+        <g>
+          <circle class="net-node-ring" cx="80" cy="120" r="9" />
+          <circle class="net-node" cx="80" cy="120" r="3.5" />
+          <circle class="net-node-ring" cx="220" cy="340" r="7" />
+          <circle class="net-node" cx="220" cy="340" r="3" />
+          <circle class="net-node-ring" cx="400" cy="80" r="8" />
+          <circle class="net-node" cx="400" cy="80" r="3.2" />
+          <circle class="net-node-ring" cx="380" cy="420" r="7" />
+          <circle class="net-node" cx="380" cy="420" r="3" />
+          <circle class="net-node-ring" cx="600" cy="200" r="10" />
+          <circle class="net-node" cx="600" cy="200" r="3.8" />
+          <circle class="net-node-ring" cx="780" cy="60" r="7" />
+          <circle class="net-node" cx="780" cy="60" r="3" />
+          <circle class="net-node-ring" cx="850" cy="380" r="8" />
+          <circle class="net-node" cx="850" cy="380" r="3.2" />
+          <circle class="net-node-ring" cx="1020" cy="150" r="9" />
+          <circle class="net-node" cx="1020" cy="150" r="3.5" />
+          <circle class="net-node-ring" cx="1140" cy="320" r="7" />
+          <circle class="net-node" cx="1140" cy="320" r="3" />
+        </g>
+
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow)">
+          <animateMotion dur="5.5s" repeatCount="indefinite"><mpath href="#e1" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="5.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow)">
+          <animateMotion dur="7s" begin="-1.5s" repeatCount="indefinite"><mpath href="#e3" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="7s" begin="-1.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.6" filter="url(#packet-glow)">
+          <animateMotion dur="4.5s" begin="-2.5s" repeatCount="indefinite"><mpath href="#e4" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="4.5s" begin="-2.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow)">
+          <animateMotion dur="6.5s" begin="-0.8s" repeatCount="indefinite"><mpath href="#e6" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="6.5s" begin="-0.8s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow)">
+          <animateMotion dur="8s" begin="-4s" repeatCount="indefinite"><mpath href="#e7" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="8s" begin="-4s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.2" filter="url(#packet-glow)">
+          <animateMotion dur="5s" begin="-3s" repeatCount="indefinite"><mpath href="#e9" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="5s" begin="-3s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow)">
+          <animateMotion dur="9s" begin="-5s" repeatCount="indefinite"><mpath href="#e11" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="9s" begin="-5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow)">
+          <animateMotion dur="7.5s" begin="-2s" repeatCount="indefinite"><mpath href="#e12" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="7.5s" begin="-2s" repeatCount="indefinite" />
+        </circle>
+        </g>
+      </svg>
       <div class="hero-content">
         <div class="eyebrow" data-en="IT services & security consulting" data-sk="IT služby a bezpečnostné poradenstvo">IT služby a bezpečnostné poradenstvo</div>
         <h1 data-en="Professional IT Services" data-sk="Profesionálne IT Služby">Profesionálne IT Služby</h1>
@@ -187,6 +276,95 @@
     </section>
 
     <section id="contact" class="contact">
+      <svg class="contact-network" viewBox="0 0 900 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="packet-glow-2" x="-200%" y="-200%" width="500%" height="500%">
+            <feGaussianBlur stdDeviation="2.2" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g transform="translate(0,-28)">
+        <path id="f1" class="net-edge" d="M60,65 L165,180" />
+        <path id="f2" class="net-edge" d="M165,180 L285,220" />
+        <path id="f3" class="net-edge" d="M60,65 L300,42" />
+        <path id="f4" class="net-edge" d="M300,42 L450,105" />
+        <path id="f5" class="net-edge" d="M285,220 L450,105" />
+        <path id="f6" class="net-edge" d="M450,105 L585,30" />
+        <path id="f7" class="net-edge" d="M450,105 L640,200" />
+        <path id="f8" class="net-edge" d="M585,30 L765,80" />
+        <path id="f9" class="net-edge" d="M640,200 L765,80" />
+        <path id="f10" class="net-edge" d="M765,80 L855,165" />
+        <path id="f11" class="net-edge" d="M300,42 L585,30" />
+        <path id="f12" class="net-edge" d="M165,180 L640,200" />
+
+        <path class="net-edge" d="M60,65 L-30,45" />
+        <path class="net-edge" d="M165,180 L130,290" />
+        <path class="net-edge" d="M300,42 L320,-30" />
+        <path class="net-edge" d="M285,220 L255,300" />
+        <path class="net-edge" d="M585,30 L565,-30" />
+        <path class="net-edge" d="M640,200 L665,300" />
+        <path class="net-edge" d="M765,80 L930,55" />
+        <path class="net-edge" d="M855,165 L930,190" />
+
+        <g>
+          <circle class="net-node-ring" cx="60" cy="65" r="7" />
+          <circle class="net-node" cx="60" cy="65" r="3" />
+          <circle class="net-node-ring" cx="165" cy="180" r="5.5" />
+          <circle class="net-node" cx="165" cy="180" r="2.4" />
+          <circle class="net-node-ring" cx="300" cy="42" r="6.5" />
+          <circle class="net-node" cx="300" cy="42" r="2.8" />
+          <circle class="net-node-ring" cx="285" cy="220" r="5.5" />
+          <circle class="net-node" cx="285" cy="220" r="2.4" />
+          <circle class="net-node-ring" cx="450" cy="105" r="8" />
+          <circle class="net-node" cx="450" cy="105" r="3.4" />
+          <circle class="net-node-ring" cx="585" cy="30" r="5.5" />
+          <circle class="net-node" cx="585" cy="30" r="2.4" />
+          <circle class="net-node-ring" cx="640" cy="200" r="6.5" />
+          <circle class="net-node" cx="640" cy="200" r="2.8" />
+          <circle class="net-node-ring" cx="765" cy="80" r="7" />
+          <circle class="net-node" cx="765" cy="80" r="3" />
+          <circle class="net-node-ring" cx="855" cy="165" r="5.5" />
+          <circle class="net-node" cx="855" cy="165" r="2.4" />
+        </g>
+
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow-2)">
+          <animateMotion dur="5.5s" repeatCount="indefinite"><mpath href="#f1" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="5.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow-2)">
+          <animateMotion dur="7s" begin="-1.5s" repeatCount="indefinite"><mpath href="#f3" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="7s" begin="-1.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.6" filter="url(#packet-glow-2)">
+          <animateMotion dur="4.5s" begin="-2.5s" repeatCount="indefinite"><mpath href="#f4" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="4.5s" begin="-2.5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow-2)">
+          <animateMotion dur="6.5s" begin="-0.8s" repeatCount="indefinite"><mpath href="#f6" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="6.5s" begin="-0.8s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow-2)">
+          <animateMotion dur="8s" begin="-4s" repeatCount="indefinite"><mpath href="#f7" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="8s" begin="-4s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.2" filter="url(#packet-glow-2)">
+          <animateMotion dur="5s" begin="-3s" repeatCount="indefinite"><mpath href="#f9" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="5s" begin="-3s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3" filter="url(#packet-glow-2)">
+          <animateMotion dur="9s" begin="-5s" repeatCount="indefinite"><mpath href="#f11" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="9s" begin="-5s" repeatCount="indefinite" />
+        </circle>
+        <circle class="net-packet" r="3.4" filter="url(#packet-glow-2)">
+          <animateMotion dur="7.5s" begin="-2s" repeatCount="indefinite"><mpath href="#f12" /></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="7.5s" begin="-2s" repeatCount="indefinite" />
+        </circle>
+        </g>
+      </svg>
       <div class="container">
         <h2 data-en="Get In Touch" data-sk="Kontaktujte Nás">Kontaktujte Nás</h2>
         <div class="contact-content">

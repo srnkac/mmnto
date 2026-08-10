@@ -94,3 +94,12 @@ document.querySelectorAll('.service-card').forEach(card => {
 });
 
 // Hero title now displays immediately without typing effect
+
+// Respect reduced-motion preference for the animated network graphics
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.hero-network, .contact-network').forEach(function (svg) {
+    if (typeof svg.pauseAnimations === 'function') {
+      svg.pauseAnimations();
+    }
+  });
+}
